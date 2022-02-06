@@ -1,0 +1,116 @@
+#home .intro {
+  width: 100%;
+  padding-left: 15%;
+  padding-right: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#home .intro > * {
+  margin-bottom: 3vw;
+}
+
+#home .intro h1 {
+  font-family: "Syne Tactile", cursive;
+  font-weight: bold;
+  font-size: 4rem;
+}
+#home .intro .head {
+  font-size: 2.5rem;
+}
+#home .intro .para {
+  font-size: 1.6rem;
+  width: 80%;
+}
+#home .intro button:hover path {
+  color: black;
+}
+#home .lottie p {
+  font-size: x-large;
+  margin-left: 6%;
+  margin-bottom: 30px;
+}
+#home .lottie .lottieCards {
+  display: flex;
+  width: 100%;
+  padding-left: 8%;
+  padding-right: 8%;
+  justify-content: space-between;
+}
+#home .lottie .lottie-animation-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+#home .lottie span {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+@keyframes homeAnis {
+  0% {
+    opacity: 0;
+    left: 0px;
+  }
+  16.5% {
+    opacity: 1;
+  }
+  32% {
+    left: 0;
+  }
+  33% {
+    opacity: 0;
+    left: -385px;
+  }
+  49.5% {
+    opacity: 1;
+  }
+  65% {
+    left: -385px;
+  }
+  66% {
+    opacity: 0;
+    left: -767px;
+  }
+  82.5% {
+    opacity: 1;
+  }
+  99% {
+    left: -767px;
+  }
+  100% {
+    opacity: 0;
+    left: 0px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #home .intro {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  #home .intro > * {
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+  }
+  #home .intro h1 {
+    font-size: xx-large;
+  }
+  #home .intro .head {
+    font-size: x-large;
+  }
+  #home .intro .para {
+    font-size: medium;
+    width: 80%;
+  }
+  #home .lottie .lottieCards {
+    width: 1150px;
+    padding: 0;
+    position: relative;
+    animation: homeAnis 10s ease-in-out 0s infinite normal;
+  }
+}

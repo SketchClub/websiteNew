@@ -1,0 +1,14 @@
+@media only screen and (max-width: 767px) {
+  #particles-js {
+    visibility: hidden;
+    display: none;
+  }
+  html,
+  body {
+    cursor: unset;
+  }
+  .no-mobile {
+    visibility: hidden !important;
+    display: none !important;
+  }
+}

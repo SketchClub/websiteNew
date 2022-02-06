@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+  color: aliceblue;
+  font-family: "Poppins";
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0px;
+}
+a > * {
+  width: 100%;
+  height: 100%;
+}
+.bold-para {
+  font-weight: 500;
+}
+.black-text-outline {
+  text-shadow: #000 0px 0px 3px, #000 0px 0px 3px, #000 0px 0px 3px,
+    #000 0px 0px 3px, #000 0px 0px 3px, #000 0px 0px 3px;
+}

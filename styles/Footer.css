@@ -1,0 +1,92 @@
+#footer {
+  display: flex;
+  width: 100%;
+  height: 35vh;
+  justify-content: space-between;
+  background-color: rgba(215, 215, 255, 0.65);
+  align-items: center;
+  padding: 3%;
+  color: black;
+  margin-top: 3%;
+}
+
+#footer > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+#footer a {
+  color: black;
+  transition: all 0.2s ease-in-out;
+}
+#footer a:hover {
+  color: white;
+}
+
+#footer .footrule {
+  width: 1px;
+  height: 90%;
+  border-radius: 1px;
+  background-color: black;
+}
+#footer .intro {
+  width: 30% !important;
+}
+
+#footer span {
+  font-weight: 600;
+  color: black;
+  margin-bottom: 15px;
+}
+#footer p {
+  color: black;
+}
+
+#footer .big-width {
+  width: 15%;
+}
+
+#footer .icons div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+#footer .icons div a {
+  margin: 7%;
+}
+#footer .icons svg {
+  height: 2em;
+  width: 2em;
+}
+#footer .icons path {
+  color: black;
+  transition: all 0.3s ease-in-out;
+}
+#footer .icons svg:hover path {
+  color: white;
+  filter: drop-shadow(0 0 20px black);
+}
+#footer .imgContainer {
+  position: relative;
+  width: 25%;
+  height: 25px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  #footer {
+    justify-content: center;
+    padding: 0%;
+    width: 100%;
+  }
+  #footer .icons {
+    width: 40%;
+  }
+  #footer .getInTouch {
+    width: 40%;
+    align-items: center;
+  }
+}

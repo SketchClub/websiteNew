@@ -1,16 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@0;1&family=Quicksand:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Syne+Tactile&display=swap");
+
 html,
 body {
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  cursor: none;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+body {
+  background-image: url(https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3593&q=25);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  /* overflow-x: hidden;  */
 }
 
-* {
-  box-sizing: border-box;
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px black;
+  border-radius: 10px;
+  background: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(50, 50, 50);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(120, 120, 120);
+}
+
+#particles-js {
+  background-color: rgba(255, 255, 255, 0.06) !important;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  position: fixed;
+  margin: 0%;
+  z-index: -1;
 }

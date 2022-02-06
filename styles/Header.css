@@ -1,0 +1,227 @@
+#header {
+  width: 100vw;
+  height: 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  margin-bottom: 25px;
+  /* position: relative; */
+}
+
+#header > a {
+  width: 6vw;
+  height: 6vw;
+  position: relative;
+}
+/* #header img {
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+} */
+
+#header .btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: auto;
+  height: 100%;
+}
+#header .btns * {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+#header .btns > a {
+  height: auto !important;
+  width: auto;
+}
+
+#header a {
+  /* padding-left: 03%; */
+  /* padding-right: 03%; */
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+  font-size: 20px;
+  font-family: "Josefin Sans", sans-serif;
+  transition: color 0.5s;
+  text-shadow: 0 0 4px slategray;
+  transition: all 0.3s;
+  color: black;
+}
+
+#header a:hover {
+  color: aliceblue;
+  text-shadow: 0 0 5px slategray, 0 0 4px slategray, 0 0 3px slategray,
+    0 0 2px slategray;
+}
+
+#header a svg,
+#header a path {
+  transition: all 0.3s;
+}
+#header a:hover svg,
+#header a:hover path {
+  color: aliceblue;
+}
+
+#header .headerMid {
+  font-family: "Allison", cursive;
+  font-size: 60px;
+  font-weight: 400;
+}
+
+#header .nav-links {
+  display: flex;
+  position: fixed;
+  right: 0%;
+  top: 0%;
+  padding-top: 7%;
+  padding-bottom: 7%;
+  height: 100vh;
+  width: 25%;
+  background-color: black;
+  z-index: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transform: translateX(102%);
+  transition: all 0.5s ease-in-out;
+}
+#header .nav-active {
+  background-color: rgba(240, 248, 255, 0.9);
+  transform: translateX(2%);
+  box-shadow: 0 0 200px rgb(32, 32, 32), 0 0 150px rgb(32, 32, 32),
+    0 0 100px rgb(32, 32, 32);
+  cursor: auto;
+}
+#header .nav-links li {
+  list-style: none;
+  opacity: 0;
+}
+#header .nav-links svg {
+  height: 35px;
+  width: auto;
+}
+#header .nav-links path {
+  color: rgb(68, 68, 68);
+}
+#header .burger div {
+  width: 25px;
+  height: 4px;
+  margin: 4px;
+  transition: all 0.3s ease;
+  background-color: white;
+  box-shadow: 0 0 4px rgb(0, 0, 0), 0 0 3px rgb(100, 100, 100),
+    0 0 2px rgb(66, 66, 66);
+}
+#header .burger:hover {
+  /* background-color: none !important; */
+  cursor: pointer;
+}
+#header .toggle div {
+  background-color: black;
+  box-shadow: 0 0 4px rgb(177, 177, 177), 0 0 3px rgb(100, 100, 100),
+    0 0 2px rgb(66, 66, 66);
+}
+#header .burger {
+  z-index: 999;
+}
+
+#header .toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+#header .toggle .line2 {
+  opacity: 0;
+}
+#header .toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+#header .icons {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+#header .icons a {
+  color: aliceblue;
+  /* filter: drop-shadow(0 0 4px rgb(0, 0, 0)); */
+}
+#header .icons a:hover {
+  color: aliceblue;
+  filter: drop-shadow(0 0 4px rgb(0, 0, 0));
+}
+#header .icons svg {
+  height: auto;
+  width: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+  #header .headNav,
+  #header .burger {
+    display: block;
+  }
+  #header {
+    justify-content: space-around;
+  }
+  #header > a {
+    display: none;
+  }
+  #header .headerMid {
+    display: block;
+    font-size: 45px;
+  }
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #header {
+    display: flex;
+    padding-top: 6%;
+    padding-left: 7%;
+    padding-right: 5%;
+    justify-content: unset;
+  }
+  #header .btns {
+    margin-left: auto;
+  }
+  #header .btns button {
+    display: none;
+  }
+  #header .nav-links {
+    width: 60%;
+    padding-top: 15%;
+    padding-bottom: 10%;
+  }
+  #header .icons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-left: 0;
+    /* margin-right: 15%; */
+    height: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  #header > a {
+    width: 12vw;
+    height: 12vw;
+    display: unset;
+  }
+  #header .nav-active {
+    transform: translateX(3%);
+  }
+}
