@@ -1,4 +1,14 @@
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 900px) {
+  .no-PC {
+    visibility: hidden !important;
+    display: none !important;
+  }
+  .no-mobile {
+    visibility: unset;
+    display: unset;
+  }
+}
+@media only screen and (max-width: 900px) {
   #particles-js {
     visibility: hidden;
     display: none;
@@ -6,6 +16,10 @@
   html,
   body {
     cursor: unset;
+  }
+  .no-PC {
+    visibility: unset;
+    display: unset;
   }
   .no-mobile {
     visibility: hidden !important;

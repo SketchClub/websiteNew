@@ -1,6 +1,6 @@
 const maxParticles = 100;
 window.addEventListener("load", (event) => {
-  particlesJS.load("particles-js", "particles.json", function () {
+  particlesJS.load("particles-js", "/particles.json", function () {
     console.log("Stars loaded!");
     const pJSIndex = 0;
     const pJS = pJSDom[pJSIndex].pJS;

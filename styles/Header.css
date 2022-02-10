@@ -159,23 +159,6 @@
   width: 30px;
 }
 
-@media only screen and (max-width: 768px) {
-  #header .headNav,
-  #header .burger {
-    display: block;
-  }
-  #header {
-    justify-content: space-around;
-  }
-  #header > a {
-    display: none;
-  }
-  #header .headerMid {
-    display: block;
-    font-size: 45px;
-  }
-}
-
 @keyframes navLinkFade {
   from {
     opacity: 0;
@@ -187,13 +170,20 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 900px) {
   #header {
     display: flex;
     padding-top: 6%;
     padding-left: 7%;
     padding-right: 5%;
-    justify-content: unset;
+    /* justify-content: unset; */
+    justify-content: space-around;
+  }
+  #header .burger {
+    display: block;
+  }
+  #header > a {
+    display: none;
   }
   #header .btns {
     margin-left: auto;

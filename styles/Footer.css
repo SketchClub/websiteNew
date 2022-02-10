@@ -20,9 +20,11 @@
 #footer a {
   color: black;
   transition: all 0.2s ease-in-out;
+  cursor: none;
 }
 #footer a:hover {
   color: white;
+  text-shadow: #000 0px 0px 3px, #000 0px 0px 3px, #000 0px 0px 3px;
 }
 
 #footer .footrule {
@@ -36,8 +38,8 @@
 }
 
 #footer span {
-  font-weight: 600;
-  color: black;
+  font-weight: 500;
+  color: rgb(50, 50, 50);
   margin-bottom: 15px;
 }
 #footer p {
@@ -76,7 +78,7 @@
   margin-bottom: 10px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 900px) {
   #footer {
     justify-content: center;
     padding: 0%;
