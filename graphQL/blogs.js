@@ -27,6 +27,7 @@ export function oneBlog(blogID) {
       OneLiner
       PublishingDate
       member{
+        id
         Name
         InstaID
         Email

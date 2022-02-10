@@ -7,7 +7,7 @@ export default function blogs({ blogsProps }) {
   // console.log(blogsProps);
   return (
     <div id="blogs">
-      <h2>Blogs brought to you by Sketch Team</h2>
+      <h1>Blogs brought to you by Sketch Team</h1>
       <Row sm={2} md={4} className="allBlogCards black-text-outline">
         {[...blogsProps].reverse().map((blogData) => {
           return (
@@ -18,7 +18,7 @@ export default function blogs({ blogsProps }) {
             >
               <Link href={"/blogs/" + blogData.id}>
                 <a style={{ flexDirection: "column", cursor: "none" }}>
-                  <h3>{blogData.Title}</h3>
+                  <h2>{blogData.Title}</h2>
                   <p>{blogData.member.Name}</p>
                 </a>
               </Link>

@@ -9,6 +9,9 @@
   }
 }
 @media only screen and (max-width: 900px) {
+  body {
+    background-image: url(https://images.unsplash.com/photo-1590272456521-1bbe160a18ce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2127&q=50);
+  }
   #particles-js {
     visibility: hidden;
     display: none;

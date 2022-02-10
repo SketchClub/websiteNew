@@ -69,7 +69,6 @@ export default function about() {
                 <h2>{data[0]}</h2>
                 <p>{data[1]}</p>
               </div>
-
               <Lottie
                 animationData={data[2]}
                 autoPlay
