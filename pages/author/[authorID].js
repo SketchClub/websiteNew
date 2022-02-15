@@ -1,4 +1,4 @@
-export default function allAuthBlogs() {
+export default function AllAuthBlogs() {
   return (
     <div>
       <br />

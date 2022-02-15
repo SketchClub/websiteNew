@@ -4,63 +4,60 @@ import { useState } from "react";
 import { newContact } from "../graphQL/contact";
 import { apoClient } from "../graphQL/client";
 import { useMutation } from "@apollo/client";
+import { useRouter } from "next/router";
+import Loading from "../components/Loading";
+import Error from "../components/Error";
+import AstroDone from "../components/Done";
 
 export default function Contact() {
   const [NAME, setName] = useState("");
   const [EMAIL, setEmail] = useState("");
   const [MSG, setMsg] = useState("");
+  const [done, setDone] = useState(false);
 
-  const [ContactSubmit, { data, loading, error }] = useMutation(newContact, {
+  const [ContactSubmit, { loading, error }] = useMutation(newContact, {
     client: apoClient,
-    onCompleted: (ocda) => {
-      console.log(ocda);
-    },
-    onError: (errrr) => {
-      console.log(errrr);
-    },
   });
 
   if (loading) {
     console.log("loading...");
+    return <Loading />;
   }
   if (error) {
     console.log("error...");
+    return <Error />;
+  }
+  if (done) {
+    return <AstroDone />;
   }
 
   async function handleSubmit() {
     try {
-      ContactSubmit({
+      await ContactSubmit({
         variables: {
           name: NAME,
           email: EMAIL,
           message: MSG,
         },
-      }).then(() => {
-        try {
-          if (Object.keys(data).length === 1) {
-            alert("Submitted! Thank you, " + data.createContact.contact.name);
-          }
-        } catch (e) {
-          console.log(e);
-        }
-      });
-      // .then(() => {
-      //   try {
-      //     if (Object.keys(data).length === 1) {
-      //       alert(
-      //         "Submitted! Thank you, " +
-      //           data.createContact.contact.name
-      //       );
-      //     }
-      //   } catch (e) {
-      //     console.log(e);
-      //   }
-      //   if (error) {
-      //     return <Error />;
-      //   }
-      // });
-    } catch (e) {
-      console.log(e);
+      })
+        .then((dataFinal) => {
+          console.log(dataFinal);
+          try {
+            if (Object.keys(dataFinal).length === 1) {
+              alert(
+                "Submitted!, Thankyou, " +
+                  dataFinal.data.createContact.contact.name
+              );
+              setDone(true);
+              return null;
+            }
+          } catch {}
+        })
+        .catch(() => {
+          console.log("Error!");
+        });
+    } catch {
+      console.log("Error!");
     }
   }
 

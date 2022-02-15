@@ -23,7 +23,7 @@ const textsAndAnis = [
   ["Deliver", deliverText, deliverAni],
 ];
 
-export default function about() {
+export default function About() {
   return (
     <div id="about">
       <Head>

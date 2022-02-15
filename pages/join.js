@@ -1,4 +1,4 @@
-export default function join() {
+export default function Join() {
   return (
     <div>
       <br />

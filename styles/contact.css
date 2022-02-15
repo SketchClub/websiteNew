@@ -28,3 +28,30 @@
 #contact form button {
   float: right;
 }
+
+@media screen and (max-width: 900px) {
+  #contact {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* text-align: center; */
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  #contact > * {
+    padding-bottom: 2%;
+  }
+  #contact h1 {
+    font-size: 1.8rem;
+  }
+  #contact p {
+    width: 80%;
+    font-size: small;
+  }
+
+  #contact form {
+    width: 90%;
+  }
+}

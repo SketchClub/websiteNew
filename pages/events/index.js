@@ -1,4 +1,4 @@
-export default function events() {
+export default function Events() {
   return (
     <div>
       <br />

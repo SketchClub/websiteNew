@@ -1,4 +1,4 @@
 import Error from "../components/Error";
-export default function _404() {
+export default function _500() {
   return <Error />;
 }

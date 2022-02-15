@@ -3,7 +3,7 @@ import { apoClient } from "../../graphQL/client";
 import Link from "next/link";
 import { Col, Row } from "react-bootstrap";
 
-export default function blogs({ blogsProps }) {
+export default function Blogs({ blogsProps }) {
   // console.log(blogsProps);
   return (
     <div id="blogs">

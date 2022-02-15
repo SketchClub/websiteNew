@@ -2,15 +2,15 @@ import { apoClient } from "../../graphQL/client";
 import { oneBlog as oneBlogQ } from "../../graphQL/blogs";
 import Image from "next/image";
 import Link from "next/link";
-import NotFound from "../../components/NotFound";
+import Error from "../../components/Error";
 import ReactMarkdown from "react-markdown";
 import readingTime from "reading-time";
 import { AiFillInstagram } from "react-icons/ai";
 import { MdEmail } from "react-icons/md";
 
-export default function blog({ blogProps }) {
+export default function Blog({ blogProps }) {
   if (blogProps === null || Object.keys(blogProps).length === 0) {
-    return <NotFound />;
+    return <Error />;
   }
   function dateFormat(strapiDate) {
     var year = strapiDate.slice(0, 4);

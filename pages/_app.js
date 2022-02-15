@@ -16,9 +16,8 @@ import "../styles/contact.css";
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-
-import { ApolloProvider } from "@apollo/client";
-import { apoClient } from "../graphQL/client";
+import Loading from "../components/Loading";
+import Error from "../components/Error";
 
 function MyApp({ Component, pageProps }) {
   const [loading, setLoading] = useState(false);
@@ -39,20 +38,29 @@ function MyApp({ Component, pageProps }) {
   });
   if (loading) {
     return (
-      <ApolloProvider client={apoClient}>
+      <>
         <Header />
-        <span>Loading...</span>
+        <Loading />
         <Footer />
-      </ApolloProvider>
+      </>
+    );
+  }
+  if (error) {
+    return (
+      <>
+        <Header />
+        <Error />
+        <Footer />
+      </>
     );
   }
 
   return (
-    <ApolloProvider client={apoClient}>
+    <>
       <Header />
       <Component {...pageProps} />
       <Footer />
-    </ApolloProvider>
+    </>
   );
 }
 
