@@ -1,4 +1,5 @@
 import Router from "next/router";
+import { useState } from "react";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -11,26 +12,47 @@ import "../styles/Footer.css";
 import "../styles/home.css";
 import "../styles/about.css";
 import "../styles/blogs.css";
+import "../styles/contact.css";
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
+import { ApolloProvider } from "@apollo/client";
+import { apoClient } from "../graphQL/client";
+
 function MyApp({ Component, pageProps }) {
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(false);
+
   Router.events.on("routeChangeStart", () => {
-    console.log("route is change");
+    // console.log("route is change");
+    setLoading(true);
   });
   Router.events.on("routeChangeComplete", () => {
-    console.log("route is complete");
+    // console.log("route is complete");
+    setLoading(false);
   });
   Router.events.on("routeChangeError", () => {
-    console.log("error");
+    // console.log("error");
+    setLoading(false);
+    setError(true);
   });
+  if (loading) {
+    return (
+      <ApolloProvider client={apoClient}>
+        <Header />
+        <span>Loading...</span>
+        <Footer />
+      </ApolloProvider>
+    );
+  }
+
   return (
-    <>
+    <ApolloProvider client={apoClient}>
       <Header />
       <Component {...pageProps} />
       <Footer />
-    </>
+    </ApolloProvider>
   );
 }
 

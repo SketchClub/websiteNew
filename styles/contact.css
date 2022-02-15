@@ -1,0 +1,30 @@
+#contact {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* text-align: center; */
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+#contact > * {
+  padding-bottom: 2%;
+}
+
+#contact h1 {
+  font-size: 3.5rem;
+}
+
+#contact p {
+  width: 70%;
+  font-size: 1.2rem;
+}
+
+#contact form {
+  width: 50%;
+}
+#contact form button {
+  float: right;
+}
