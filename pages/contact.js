@@ -5,7 +5,7 @@ import { newContact } from "../graphQL/contact";
 import { apoClient } from "../graphQL/client";
 import { useMutation } from "@apollo/client";
 
-export default function contact() {
+export default function Contact() {
   const [NAME, setName] = useState("");
   const [EMAIL, setEmail] = useState("");
   const [MSG, setMsg] = useState("");
