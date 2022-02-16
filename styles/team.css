@@ -1,0 +1,19 @@
+#team {
+  padding-left: 05%;
+  padding-right: 05%;
+}
+
+#team .col {
+  padding: 10px;
+}
+
+#team .card {
+  border-radius: 20px;
+  background-color: none;
+  overflow: hidden;
+}
+
+#team .card * {
+  padding: 0;
+  margin: 0;
+}

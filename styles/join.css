@@ -1,0 +1,111 @@
+#JoinDiv {
+  color: black;
+  text-shadow: #000 0px 0px 3px, #000 0px 0px 3px, #000 0px 0px 3px,
+    #000 0px 0px 3px, #000 0px 0px 3px, #000 0px 0px 3px;
+  align-items: center;
+  justify-content: center;
+}
+#JoinDiv form {
+  margin-bottom: 5%;
+}
+#JoinDiv a {
+  display: unset;
+}
+#JoinDiv form button {
+  float: right;
+  width: auto;
+}
+
+#JoinDiv .domain option {
+  color: black;
+}
+
+#JoinDiv > h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+}
+
+#JoinDiv > p {
+  justify-content: center;
+  align-items: center;
+  padding-left: 17%;
+  padding-right: 17%;
+  font-size: 20px;
+  margin: 4%;
+}
+#JoinDiv > p > a {
+  text-decoration: none;
+  color: magenta;
+  cursor: pointer;
+  display: unset;
+}
+
+@media only screen and (max-width: 900px) {
+  #JoinDiv > h1 {
+    padding-left: 4%;
+    padding-right: 4%;
+    font-size: 1.5rem;
+  }
+  #JoinDiv > p {
+    padding-left: 3%;
+    padding-right: 3%;
+    font-size: medium;
+  }
+  #JoinDiv ::placeholder {
+    font-size: 0.75rem;
+  }
+}
+
+#JoinDiv > .JoinFormDiv button {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  float: right;
+  transition: all 0.3s ease-in-out;
+}
+#JoinDiv > .JoinFormDiv button span {
+  cursor: pointer;
+  margin-right: 10px;
+}
+#JoinDiv > .JoinFormDiv > * > button > svg {
+  font-size: 2.5rem;
+}
+
+#JoinDiv > .JoinFormDiv button:hover span {
+  color: black;
+}
+#JoinDiv > .JoinFormDiv button:hover path {
+  color: black;
+}
+
+#JoinDiv > .JoinFormDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+#JoinDiv > .JoinFormDiv > form {
+  width: 800px;
+}
+
+#JoinDiv > .JoinFormDiv > form > div > label {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+#JoinDiv > .JoinFormDiv > form > div > input {
+  cursor: auto;
+}
+#JoinDiv > .JoinFormDiv > form > * > textarea {
+  cursor: auto;
+}
+#JoinDiv > .JoinFormDiv > form > .domain {
+  cursor: auto;
+}
+#JoinDiv > .JoinFormDiv > form > .domain > select {
+  cursor: auto;
+}

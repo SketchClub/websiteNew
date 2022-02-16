@@ -51,6 +51,7 @@ export default function Header() {
             layout="fill"
             objectFit="contain"
             priority={true}
+            as="img"
           />
         </a>
       </Link>

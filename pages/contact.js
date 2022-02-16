@@ -4,7 +4,6 @@ import { useState } from "react";
 import { newContact } from "../graphQL/contact";
 import { apoClient } from "../graphQL/client";
 import { useMutation } from "@apollo/client";
-import { useRouter } from "next/router";
 import Loading from "../components/Loading";
 import Error from "../components/Error";
 import AstroDone from "../components/Done";
