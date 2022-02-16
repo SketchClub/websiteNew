@@ -13,6 +13,7 @@ import "../styles/home.css";
 import "../styles/about.css";
 import "../styles/blogs.css";
 import "../styles/contact.css";
+import "../styles/events.css";
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";

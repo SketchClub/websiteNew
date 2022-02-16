@@ -56,13 +56,13 @@ export default function Blog({ blogProps }) {
         break;
     }
     switch (date.slice(1, 2)) {
-      case "01":
+      case "1":
         dateAddOn = "st";
         break;
-      case "02":
+      case "2":
         dateAddOn = "nd";
         break;
-      case "03":
+      case "3":
         dateAddOn = "rd";
         break;
 
