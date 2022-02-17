@@ -35,6 +35,10 @@ export default function Home() {
           name="keywords"
           content="sketch, sketch club, club, srm, ramapuram, srm ramapuram, sketch club srm, sketch srm, club srm"
         />
+        <meta
+          name="google-site-verification"
+          content="NinkceGmOrzK5wV4V1ID5ozHodxLGy11Njtea6r6goY"
+        />
       </Head>
       <div className="intro">
         <h1 className="black-text-outline">{welcome}</h1>
