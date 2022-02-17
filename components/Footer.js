@@ -1,4 +1,4 @@
-import { FaDiscord, FaLinkedin, FaFacebook } from "react-icons/fa";
+import { FaDiscord, FaLinkedin, FaPencilAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { AiFillInstagram, AiFillYoutube } from "react-icons/ai";
 import Link from "next/link";
@@ -59,15 +59,17 @@ export default function Footer() {
           </a>
         </div>
         <div className="down">
-          <a href="">
+          <a href="https://www.linkedin.com/company/sketch-srm/">
             <FaLinkedin color="black" />
           </a>
-          <a href="">
+          <a href="https://www.youtube.com/channel/UCqI8MZ5R-Bz4ienOk2AmiUQ?sub_confirmation=1">
             <AiFillYoutube color="black" />
           </a>
-          <a href="">
-            <FaFacebook color="black" />
-          </a>
+          <Link href="/blogs">
+            <a>
+              <FaPencilAlt color="black" />
+            </a>
+          </Link>
         </div>
       </div>
       <div className="footrule no-mobile"></div>

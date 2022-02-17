@@ -152,7 +152,7 @@
   margin-left: 10px;
 }
 #event .event-content h3 {
-  margin-left: 30px;
+  margin-left: 20px;
   font-size: 1.5rem;
 }
 #event .event-content p {
@@ -198,18 +198,26 @@
 @media screen and (max-width: 900px) {
   #event > h1 {
     font-size: 2.2rem;
+    margin-bottom: 15px;
   }
   #event > p {
     font-size: medium;
+  }
+  #event .imgContainer {
+    height: 170px;
+    width: 170px;
   }
   #event .date {
     font-size: medium;
   }
   #event .event-content {
     padding-top: 5%;
-    padding-left: 2%;
-    padding-right: 5%;
+    padding-left: 3%;
+    padding-right: 3%;
     padding-bottom: 2%;
+  }
+  #event .event-content h1 {
+    line-height: 0;
   }
   #event .event-content p,
   #event .event-content em,

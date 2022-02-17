@@ -91,7 +91,6 @@ export default function Team({ managers, alumni, members }) {
         </Row>
         <br />
         <br />
-        <br />
         <Row xs={2} sm={2} md={5}>
           {members._2022.map((mem) => (
             <Col key={mem.id}>
