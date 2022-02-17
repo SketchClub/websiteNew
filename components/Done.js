@@ -13,7 +13,7 @@ export default function Done() {
         textAlign: "center",
       }}
     >
-      <h1 style={{ fontSize: "xx-large" }}>Done! :D</h1>
+      <h1 style={{ fontSize: "large" }}>Done! :D</h1>
       <Lottie
         style={{ height: "50vh" }}
         animationData={okAni}

@@ -13,7 +13,7 @@ export default function Error() {
         textAlign: "center",
       }}
     >
-      <h1 style={{ fontSize: "xx-large" }}>Error! :(</h1>
+      <h1 style={{ fontSize: "large" }}>Error! :(</h1>
       <Lottie
         style={{ height: "50vh" }}
         animationData={errorAni}

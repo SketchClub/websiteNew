@@ -68,6 +68,12 @@
   #about .intro h1 {
     font-size: 2.7rem;
   }
+  #about .intro p {
+    font-size: medium;
+  }
+  #about .text-and-anis p {
+    font-size: medium;
+  }
   #about .text-and-anis .card {
     width: 100%;
     display: flex;

@@ -13,7 +13,7 @@ export default function Loading() {
         textAlign: "center",
       }}
     >
-      <h1 style={{ fontSize: "xx-large" }}>Loading... Please wait...</h1>
+      <h1 style={{ fontSize: "large" }}>Loading... Please wait...</h1>
       <Lottie
         style={{ height: "50vh" }}
         animationData={loadingAni}
