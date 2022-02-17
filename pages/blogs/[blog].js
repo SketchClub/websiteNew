@@ -2,6 +2,7 @@ import { apoClient } from "../../graphQL/client";
 import { oneBlog as oneBlogQ } from "../../graphQL/blogs";
 import Image from "next/image";
 import Link from "next/link";
+import Head from "next/head";
 import Error from "../../components/Error";
 import ReactMarkdown from "react-markdown";
 import readingTime from "reading-time";
@@ -85,6 +86,20 @@ export default function Blog({ blogProps }) {
   // const blogID = useRouter().query.blog
   return (
     <div id="blog">
+      <Head>
+        <title>
+          Sketch | {blogProps.Title} by {blogProps.member.Name}
+        </title>
+        <meta
+          name="description"
+          content={
+            blogProps.Title +
+            " is a blog written by " +
+            blogProps.member.Name +
+            " who is a member of Sketch Club - SRM Ramapuram"
+          }
+        />
+      </Head>
       <h1 className="black-text-outline">{blogProps.Title}</h1>
       <p
         className="one-liner black-text-outline"

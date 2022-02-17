@@ -1,12 +1,20 @@
 import { get2021, get2022, getAlumni, getManagers } from "../graphQL/team";
 import apoClient from "../graphQL/client";
-
+import Head from "next/head";
 import { Row, Col, Card } from "react-bootstrap";
 import { AiFillInstagram as InstagramIcon } from "react-icons/ai";
 import { MdEmail as EmailIcon } from "react-icons/md";
+
 export default function Team({ managers, alumni, members }) {
   return (
     <div id="team">
+      <Head>
+        <title>Sketch | Team | Our Family</title>
+        <meta
+          name="description"
+          content="SKETCH CLUB | SRM RAMAPURAM | The beloved and amazing team of Sketch Club"
+        />
+      </Head>
       <h1 className="black-text-outline">私たちの家族</h1>
       <div className="managers">
         <h2>The Kage</h2>

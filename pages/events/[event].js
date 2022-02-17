@@ -3,6 +3,7 @@ import { eventQ } from "../../graphQL/events";
 import Error from "../../components/Error";
 import ReactMarkdown from "react-markdown";
 import Image from "next/image";
+import Head from "next/head";
 
 export default function Blog({ eveProps }) {
   if (eveProps === null || Object.keys(eveProps).length === 0) {
@@ -70,6 +71,15 @@ export default function Blog({ eveProps }) {
   }
   return (
     <div id="event">
+      <Head>
+        <title>Sketch | {eveProps.Title} | Event</title>
+        <meta
+          name="description"
+          content={
+            eveProps.Title + " is an event by the Sketch Club - SRM Ramapuram"
+          }
+        />
+      </Head>
       <h1 className="black-text-outline">{eveProps.Title}</h1>
       <div className="imgContainer">
         <Image src={eveProps.Poster.url} layout="fill" objectFit="cover" />

@@ -7,6 +7,7 @@ import { useMutation } from "@apollo/client";
 import Loading from "../components/Loading";
 import Error from "../components/Error";
 import AstroDone from "../components/Done";
+import Head from "next/head";
 
 export default function Contact() {
   const [NAME, setName] = useState("");
@@ -62,6 +63,13 @@ export default function Contact() {
 
   return (
     <div id="contact">
+      <Head>
+        <title>Sketch | Contact us</title>
+        <meta
+          name="description"
+          content="SKETCH CLUB | SRM RAMAPURAM | Contact the Sketch Team"
+        />
+      </Head>
       <h1>Feel free to contact us.</h1>
       {contactText.split("\n").map((p, i) => {
         return <p key={i}>{p}</p>;

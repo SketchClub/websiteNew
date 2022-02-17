@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Link from "next/link";
+import Head from "next/head";
 
 import { Button, Form } from "react-bootstrap";
 import { BsPersonPlusFill as PersonPlusFill } from "react-icons/bs";
@@ -80,6 +81,13 @@ export default function Join() {
 
   return (
     <div id="JoinDiv">
+      <Head>
+        <title>Sketch | Join us</title>
+        <meta
+          name="description"
+          content="SKETCH CLUB | SRM RAMAPURAM | Join the team of Sketch Club and be a part of our family"
+        />
+      </Head>
       <h1>Be a part of our family!</h1>
       <p>
         We’re always on the lookout for awesome and creative minds to join our

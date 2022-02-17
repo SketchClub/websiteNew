@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Head from "next/head";
 import { Col, Row } from "react-bootstrap";
 import Link from "next/link";
 import { apoClient } from "../../graphQL/client";
@@ -22,6 +23,13 @@ export default function Events({ eventsProps }) {
   if (newEvents.length !== 0) {
     newEves = (
       <div className="newEvents black-text-outline">
+        <Head>
+          <title>Sketch | Events</title>
+          <meta
+            name="description"
+            content="SKETCH CLUB | SRM RAMAPURAM | Events conducted / held / organized by Sketch Club"
+          />
+        </Head>
         <h1>Upcoming Events</h1>
         <Row sm={2} md={4}>
           {newEvents.map((Eve) => (
