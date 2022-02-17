@@ -16,6 +16,7 @@ import "../styles/contact.css";
 import "../styles/events.css";
 import "../styles/join.css";
 import "../styles/team.css";
+import "../styles/author.css";
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";

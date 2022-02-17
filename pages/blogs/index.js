@@ -8,21 +8,17 @@ export default function Blogs({ blogsProps }) {
   return (
     <div id="blogs">
       <h1>Blogs brought to you by Sketch Team</h1>
-      <Row sm={2} md={4} className="allBlogCards black-text-outline">
+      <Row xs={2} sm={2} md={4} className="allBlogCards black-text-outline">
         {[...blogsProps].reverse().map((blogData) => {
           return (
-            <Col
-              key={blogData.id}
-              className={"blogCard _" + blogData.id}
-              style={{ height: "20vw", position: "relative" }}
-            >
-              <Link href={"/blogs/" + blogData.id}>
-                <a style={{ flexDirection: "column", cursor: "none" }}>
+            <Link href={"/blogs/" + blogData.id}>
+              <a>
+                <Col key={blogData.id} className={"blogCard _" + blogData.id}>
                   <h2>{blogData.Title}</h2>
                   <p>{blogData.member.Name}</p>
-                </a>
-              </Link>
-            </Col>
+                </Col>
+              </a>
+            </Link>
           );
         })}
       </Row>

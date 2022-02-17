@@ -11,6 +11,7 @@ export function authorBlogs(authorID) {
         InstaID
         Email
         Blogs {
+          id
           Title
           OneLiner
           PublishingDate
