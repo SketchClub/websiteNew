@@ -1,19 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap");
+
 #team {
   padding-left: 05%;
   padding-right: 05%;
 }
 
+#team h1 {
+  font-family: "Noto Serif JP";
+  margin-bottom: 30px;
+  font-size: 3rem;
+}
+
 #team .col {
+  padding: 20px;
+  height: 20vw;
+}
+
+#team .managers .col {
+  height: 23vw;
   padding: 10px;
 }
 
 #team .card {
   border-radius: 20px;
+  height: 100%;
   background-color: none;
   overflow: hidden;
+}
+
+#team .card img {
+  object-fit: cover !important;
+  height: 100%;
+  width: auto;
 }
 
 #team .card * {
   padding: 0;
   margin: 0;
+  cursor: default;
+}
+
+#team .imgOverlay > * {
+  margin-left: 10px;
+  color: white;
+  font-weight: 600;
+  text-shadow: black 0 0 5px, black 0 0 10px, black 0 0 15px;
+}
+
+#team .imgOverlay {
+  margin-bottom: 10px;
+}
+
+#team .imgOverlay div {
+  font-size: 1rem;
+}
+
+#team .imgOverlay p {
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
+#team .imgOverlay a path {
+  filter: drop-shadow(black 0 0 20px);
+  transition: all 0.3s ease-in-out;
+}
+#team .imgOverlay a:hover path {
+  color: rgb(50, 50, 50);
+}
+
+#team .imgOverlay a * {
+  cursor: pointer !important;
+}
+
+#team > div {
+  margin-bottom: 3%;
+}
+
+#team h2 {
+  font-style: italic;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 900px) {
+  #team {
+    padding-left: 03%;
+    padding-right: 03%;
+  }
+
+  #team .col {
+    padding: 10px;
+    height: 60vw;
+  }
+
+  #team .managers .col {
+    height: 60vw;
+    padding: 10px;
+  }
 }

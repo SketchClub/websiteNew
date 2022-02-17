@@ -92,10 +92,9 @@ export default function Blog({ blogProps }) {
       >
         {`"` + blogProps.OneLiner + `"`}
       </p>
-      <p className="date black-text-outline">
+      <p className="date-and-read black-text-outline">
         {dateFormat(blogProps.PublishingDate)}
-      </p>
-      <p className="minRead black-text-outline">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         {readTime(blogProps.Content)}
       </p>
       <div className="blog-content">

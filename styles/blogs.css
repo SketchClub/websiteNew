@@ -87,9 +87,10 @@
   margin-bottom: 25px;
 }
 
-#blog .date,
-#blog .minRead {
+#blog .date-and-read {
+  font-size: 1.2rem !important;
   font-size: x-large;
+  text-align: end;
 }
 
 #blog .blog-content {
@@ -178,8 +179,8 @@
   height: auto;
   align-self: flex-end;
   margin-right: 5%;
-  margin-top: 3%;
-  padding: 3%;
+  margin-top: 1%;
+  padding: 2%;
   border-radius: 20px;
   transition: background-color 0.3s ease-in-out;
 }

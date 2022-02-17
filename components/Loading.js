@@ -1,4 +1,4 @@
-import loadingAni from "../public/assets/lottie/space_loading.json";
+import loadingAni from "../public/assets/lottie/caterpLoad.json";
 import Lottie from "lottie-react";
 export default function Loading() {
   return (

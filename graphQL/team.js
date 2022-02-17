@@ -12,6 +12,9 @@ export const getAlumni = gql`
         ProfilePicture {
           url
         }
+        club_roles {
+          Role
+        }
       }
     }
   }
@@ -19,7 +22,7 @@ export const getAlumni = gql`
 
 export const getManagers = gql`
   query {
-    clubRole(id: 10) {
+    clubRole(id: 2) {
       members(sort: "Name") {
         Name
         id
@@ -38,7 +41,7 @@ export const getManagers = gql`
 
 export const get2021 = gql`
   query {
-    clubRole(id: 20) {
+    clubRole(id: 11) {
       members(sort: "Name") {
         Name
         id
@@ -57,7 +60,7 @@ export const get2021 = gql`
 
 export const get2022 = gql`
   query {
-    clubRole(id: 21) {
+    clubRole(id: 12) {
       members(sort: "Name") {
         Name
         id
