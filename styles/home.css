@@ -108,9 +108,15 @@
     width: 80%;
   }
   #home .lottie .lottieCards {
-    width: 1150px;
+    /* width: 1150px; */
+    width: 100%;
     padding: 0;
     position: relative;
-    animation: homeAnis 10s ease-in-out 0s infinite normal;
+    /* animation: homeAnis 10s ease-in-out 0s infinite normal; */
+  }
+  #home .lottie .lottieCards span {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    font-weight: 400;
   }
 }
