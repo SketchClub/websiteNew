@@ -11,9 +11,9 @@ export default function Blogs({ blogsProps }) {
       <Row xs={2} sm={2} md={4} className="allBlogCards black-text-outline">
         {[...blogsProps].reverse().map((blogData) => {
           return (
-            <Link href={"/blogs/" + blogData.id}>
+            <Link href={"/blogs/" + blogData.id} key={blogData.id}>
               <a>
-                <Col key={blogData.id} className={"blogCard _" + blogData.id}>
+                <Col className={"blogCard _" + blogData.id}>
                   <h2>{blogData.Title}</h2>
                   <p>{blogData.member.Name}</p>
                 </Col>
