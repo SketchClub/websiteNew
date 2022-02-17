@@ -405,7 +405,6 @@
 }
 
 #blog .date-and-read {
-  font-size: 1.2rem !important;
   font-size: x-large;
   text-align: end;
 }
@@ -567,9 +566,9 @@
   #blog > p {
     font-size: medium;
   }
-  #blog .date,
-  #blog .minRead {
-    font-size: medium;
+  #blog .date-and-read {
+    font-size: small !important;
+    text-align: center;
   }
   #blog .blog-content {
     padding-top: 5%;
@@ -611,6 +610,7 @@
     width: 50%;
   }
   #blog .author .name-and-socials h2 {
+    font-size: large;
     color: black;
   }
 

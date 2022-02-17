@@ -94,7 +94,7 @@ export default function Blog({ blogProps }) {
       </p>
       <p className="date-and-read black-text-outline">
         {dateFormat(blogProps.PublishingDate)}
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         {readTime(blogProps.Content)}
       </p>
       <div className="blog-content">

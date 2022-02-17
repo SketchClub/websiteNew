@@ -59,3 +59,71 @@
   display: flex;
   flex-direction: column;
 }
+
+@media screen and (max-width: 900px) {
+  #author {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+
+  #author .authInfo {
+    display: flex;
+    /* background-color: rgba(255, 255, 255, 0.555); */
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  #author .authInfo h1 {
+    font-size: x-large;
+    width: 70vw;
+    margin-bottom: 10px;
+  }
+
+  #author .picture {
+    height: 20vw;
+    width: 20vw;
+  }
+
+  #author .socials {
+    display: flex;
+    justify-content: flex-start;
+    height: 2rem;
+    width: 50%;
+  }
+  #author .socials a {
+    height: 100%;
+  }
+
+  #author .allBlogs {
+    padding-left: 4%;
+    padding-right: 15%;
+    margin-top: 25px;
+  }
+
+  #author .allBlogs h2,
+  #author .allBlogs p,
+  #author .allBlogs span {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 15px;
+    color: black;
+  }
+
+  #author .allBlogs h2 {
+    font-weight: 500;
+  }
+
+  #author .allBlogs p {
+    font-style: italic;
+    margin-bottom: 0;
+  }
+
+  #author .blog {
+    background-color: rgba(128, 128, 128, 0.7);
+    border-radius: 15px;
+    margin-bottom: 3%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+}
