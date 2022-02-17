@@ -35,8 +35,8 @@ export default function AllAuthBlogs({ blogProps }) {
           </div>
         </div>
       </div>
-      {blogProps.Blogs.map((blog) => {
-        return <h2>{blog.Title}</h2>;
+      {blogProps.Blogs.map((blog, i) => {
+        return <h2 key={i}>{blog.Title}</h2>;
       })}
     </div>
   );
