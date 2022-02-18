@@ -343,7 +343,7 @@
 }
 
 #blogs .col:hover {
-  background-color: rgba(200, 200, 200, 0.8);
+  background-color: rgba(200, 200, 200, 0.85);
 }
 #blogs .col:hover p {
   transition: all 0.5s;
@@ -412,10 +412,11 @@
 #blog .blog-content {
   display: flex;
   flex-direction: column;
-  background-color: rgba(240, 248, 255, 0.5);
+  background-color: rgba(240, 248, 255, 0.95);
   width: 90%;
   padding: 6%;
   border-radius: 20px;
+  cursor: default;
 }
 #blog .blog-content h1,
 #blog .blog-content h2,
@@ -428,25 +429,26 @@
 #blog .blog-content code {
   color: black;
 }
-#blog .blog-content h1,
-#blog .blog-content h2,
-#blog .blog-content h3,
-#blog .blog-content blockquote,
-#blog .blog-content p {
-  margin-bottom: 20px;
+#blog .blog-content strong,
+#blog .blog-content em,
+#blog .blog-content u,
+#blog .blog-content li,
+#blog .blog-content code {
+  font-size: inherit !important;
 }
 #blog .blog-content h1 {
-  font-size: 2.8rem;
+  font-size: 2.3rem;
 }
 #blog .blog-content h2 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin-left: 10px;
 }
 #blog .blog-content h3 {
-  margin-left: 30px;
+  margin-left: 20px;
   font-size: 1.5rem;
 }
 #blog .blog-content p {
+  font-size: 1.5rem;
   margin-left: 20px;
 }
 #blog .blog-content li {

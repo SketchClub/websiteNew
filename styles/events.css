@@ -96,9 +96,9 @@
 
 #event a {
   display: unset;
-  font-weight: 600;
-  color: lawngreen;
-  text-shadow: black 0 0 8px;
+  font-weight: 500;
+  color: rgb(179, 0, 255);
+  text-shadow: rgb(0, 0, 0) 0 0 1px;
 }
 
 #event > h1 {
@@ -121,10 +121,11 @@
 #event .event-content {
   display: flex;
   flex-direction: column;
-  background-color: rgba(240, 248, 255, 0.5);
+  background-color: rgba(240, 248, 255, 0.85);
   width: 90%;
   padding: 6%;
   border-radius: 20px;
+  cursor: default;
 }
 #event .event-content h1,
 #event .event-content h2,
@@ -144,11 +145,18 @@
 #event .event-content p {
   margin-bottom: 20px;
 }
+#event .event-content strong,
+#event .event-content em,
+#event .event-content u,
+#event .event-content li,
+#event .event-content code {
+  font-size: inherit !important;
+}
 #event .event-content h1 {
-  font-size: 2.8rem;
+  font-size: 2.3rem;
 }
 #event .event-content h2 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin-left: 10px;
 }
 #event .event-content h3 {
@@ -156,6 +164,7 @@
   font-size: 1.5rem;
 }
 #event .event-content p {
+  font-size: 1.5rem;
   margin-left: 20px;
 }
 #event .event-content li {
