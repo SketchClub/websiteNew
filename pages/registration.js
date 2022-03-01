@@ -190,6 +190,11 @@ export default function Registration() {
       </div>
     );
   } else {
-    return <Ok />;
+    return (
+      <>
+        {forHead}
+        <Ok />
+      </>
+    );
   }
 }
