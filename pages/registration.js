@@ -4,6 +4,7 @@ import { Form, Button } from "react-bootstrap";
 // import Error from "../components/Error";
 import Ok from "../components/Done";
 import axios from "axios";
+import Head from "next/head";
 
 export default function Registration() {
   var [Name, setName] = useState("");
@@ -152,9 +153,17 @@ export default function Registration() {
     }
   }
 
+  const forHead = (
+    <Head>
+      <title>Sketch Club | {heading}</title>
+      <meta name="description" content={"Sketch Club | " + heading} />
+    </Head>
+  );
+
   if (isok) {
     return (
       <div id="CustomFormDiv">
+        {forHead}
         <h2>{heading}</h2>
         <Form id="CustomForm">
           {io.map((arr, ind) => {
