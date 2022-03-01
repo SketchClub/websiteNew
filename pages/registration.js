@@ -142,6 +142,8 @@ export default function Registration() {
   }
 
   function handleSubmitInit() {
+    setEmail(Email.trim());
+    setPhone(Phone.trim());
     if (emailPattern.test(Email)) {
       if (phonePattern.test(Phone)) {
         handleSubmit();
