@@ -17,6 +17,7 @@ import "../styles/events.css";
 import "../styles/join.css";
 import "../styles/team.css";
 import "../styles/author.css";
+import "../styles/registration.css";
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";
