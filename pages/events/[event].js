@@ -52,17 +52,28 @@ export default function Blog({ eveProps }) {
         month = "December";
         break;
     }
-    switch (date.slice(1, 2)) {
-      case "1":
+    switch (date.slice(0, 2)) {
+      case "01":
         dateAddOn = "st";
         break;
-      case "2":
+      case "02":
         dateAddOn = "nd";
         break;
-      case "3":
+      case "03":
         dateAddOn = "rd";
         break;
-
+      case "21":
+        dateAddOn = "st";
+        break;
+      case "22":
+        dateAddOn = "nd";
+        break;
+      case "23":
+        dateAddOn = "rd";
+        break;
+      case "31":
+        dateAddOn = "st";
+        break;
       default:
         dateAddOn = "th";
         break;
