@@ -15,7 +15,7 @@ export default function Error() {
       }}
     >
       <Head>
-        <title>Error!</title>
+        <title>Error!!!</title>
       </Head>
       <h1 style={{ fontSize: "large" }}>Error! :( </h1>
       <Lottie
