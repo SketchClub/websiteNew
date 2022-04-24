@@ -93,7 +93,12 @@ export default function Blog({ eveProps }) {
       </Head>
       <h1 className="black-text-outline">{eveProps.Title}</h1>
       <div className="imgContainer">
-        <Image src={eveProps.Poster.url} layout="fill" objectFit="cover" />
+        <Image
+          src={eveProps.Poster.url}
+          layout="fill"
+          objectFit="cover"
+          alt="Sketch Club SRM Ramapuram"
+        />
       </div>
       <p className="date black-text-outline">
         {dateFormat(eveProps.EventDate)}

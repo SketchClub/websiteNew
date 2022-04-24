@@ -124,6 +124,7 @@ export default function Blog({ blogProps }) {
                 className="image"
                 layout="fill"
                 objectFit="cover"
+                alt="Sketch Club SRM Ramapuram"
               />
             </div>
           </a>

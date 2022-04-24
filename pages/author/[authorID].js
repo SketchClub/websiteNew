@@ -96,6 +96,7 @@ export default function AllAuthBlogs({ blogProps }) {
         <div className="picture">
           <Image
             src={blogProps.ProfilePicture.url}
+            alt="Sketch Club SRM Ramapuram"
             layout="fill"
             objectFit="cover"
           />
