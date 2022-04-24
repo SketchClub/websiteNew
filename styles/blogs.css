@@ -12,6 +12,7 @@
   flex-direction: column;
   cursor: none;
   height: 23vw;
+  margin-top: 25px;
 }
 
 #blogs .col {
@@ -48,6 +49,10 @@
 }
 
 @media screen and (max-width: 900px) {
+  #blogs {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
   #blogs h1 {
     font-size: xx-large;
     text-align: center;

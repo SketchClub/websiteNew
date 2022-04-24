@@ -204,6 +204,10 @@
   width: 65%;
 }
 
+#event .event-content img[alt~="x-small-width"] {
+  width: 25%;
+}
+
 @media screen and (max-width: 900px) {
   #event > h1 {
     font-size: 2.2rem;
@@ -234,6 +238,9 @@
     font-size: medium;
     line-height: 2rem;
   }
+  #event .event-content img {
+    margin-top: 15px;
+  }
   #event .event-content img[alt~="small-width"] {
     width: 50%;
   }
@@ -242,5 +249,8 @@
   }
   #event .event-content img[alt~="big-width"] {
     width: 80%;
+  }
+  #event .event-content img[alt~="x-small-width"] {
+    width: 50%;
   }
 }

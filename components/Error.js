@@ -1,5 +1,6 @@
 import errorAni from "../public/assets/lottie/astro_err.json";
 import Lottie from "lottie-react";
+import { Head } from "next/head";
 export default function Error() {
   return (
     <div
@@ -13,7 +14,10 @@ export default function Error() {
         textAlign: "center",
       }}
     >
-      <h1 style={{ fontSize: "large" }}>Error! :(</h1>
+      <Head>
+        <title>Error!</title>
+      </Head>
+      <h1 style={{ fontSize: "large" }}>Error! :( </h1>
       <Lottie
         style={{ height: "50vh" }}
         animationData={errorAni}
