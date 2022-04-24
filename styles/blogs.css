@@ -129,14 +129,20 @@
 }
 #blog .blog-content h1 {
   font-size: 2.3rem;
+  font-weight: 700;
+}
+#blog .blog-content strong {
+  font-weight: 600;
 }
 #blog .blog-content h2 {
   font-size: 1.8rem;
+  font-weight: 600;
   margin-left: 10px;
 }
 #blog .blog-content h3 {
   margin-left: 20px;
   font-size: 1.5rem;
+  font-weight: 600;
 }
 #blog .blog-content p {
   font-size: 1.5rem;
@@ -177,6 +183,10 @@
 
 #blog .blog-content img[alt~="big-width"] {
   width: 65%;
+}
+
+#blog .blog-content img[alt~="x-small-width"] {
+  width: 25%;
 }
 
 #blog .author {
@@ -283,6 +293,9 @@
   }
   #blog .blog-content img[alt~="big-width"] {
     width: 80%;
+  }
+  #blog .blog-content img[alt~="x-small-width"] {
+    width: 50%;
   }
   #blog .author {
     background-color: rgba(240, 248, 255, 0.5);

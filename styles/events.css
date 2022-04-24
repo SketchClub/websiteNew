@@ -154,14 +154,20 @@
 }
 #event .event-content h1 {
   font-size: 2.3rem;
+  font-weight: 700;
+}
+#event .event-content strong {
+  font-weight: 600;
 }
 #event .event-content h2 {
   font-size: 1.8rem;
+  font-weight: 600;
   margin-left: 10px;
 }
 #event .event-content h3 {
   margin-left: 20px;
   font-size: 1.5rem;
+  font-weight: 600;
 }
 #event .event-content p {
   font-size: 1.5rem;
