@@ -1,6 +1,6 @@
 import errorAni from "../public/assets/lottie/astro_err.json";
 import Lottie from "lottie-react";
-import { Head } from "next/head";
+import Head from "next/head";
 export default function Error() {
   return (
     <div
