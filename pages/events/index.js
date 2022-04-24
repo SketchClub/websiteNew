@@ -27,10 +27,10 @@ export default function Events({ eventsProps }) {
           <title>Sketch | Events</title>
           <meta
             name="description"
-            content="SKETCH CLUB | SRM RAMAPURAM | Events conducted / held / organized by Sketch Club"
+            content="SKETCH CLUB | SRM RAMAPURAM | Events conducted / held / organized by Sketch Club ."
           />
         </Head>
-        <h1>Upcoming Events</h1>
+        <h1>Upcoming Event</h1>
         <Row sm={2} md={4}>
           {newEvents.map((Eve) => (
             <Col key={Eve.id}>
