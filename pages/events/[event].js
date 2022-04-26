@@ -7,6 +7,22 @@ import Image from "next/image";
 import Head from "next/head";
 
 export default function Blog({ eveProps }) {
+  try {
+    var event_elem = document.querySelector(".event-content");
+    var head_elem = event_elem.querySelectorAll("h1, h2, h3");
+    head_elem.forEach((elem) => {
+      var text = elem.innerText;
+      var index1 = text.indexOf("{{{{{");
+      var index2 = text.indexOf("}}}}}");
+      if (index1 !== -1 && index2 !== -1) {
+        var subtext1 = text.substring(0, index1); //real heading
+        var subtext2 = text.substring(index1, text.length); //idname
+        var idtext = subtext2.substring(5, subtext2.indexOf("}}}}}"));
+        elem.innerText = subtext1;
+        elem.setAttribute("id", idtext);
+      }
+    });
+  } catch {}
   useEffect(() => {
     var event_elem = document.querySelector(".event-content");
     var head_elem = event_elem.querySelectorAll("h1, h2, h3");
